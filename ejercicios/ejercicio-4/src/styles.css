@@ -1,0 +1,81 @@
+body {
+  margin: 0px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "sidebar navbar"
+    "sidebar thumbcontainer";
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 10% 90%;
+  height: 100vh;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border: dashed;
+  padding: 0em 1em;
+}
+
+.navbar {
+  grid-area: navbar;
+  border: dashed;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+.thumb-container {
+  grid-area: thumbcontainer;
+  border: dashed;
+}
+
+.navbar .icon {
+  margin: 0em 0.5em;
+  padding: 0px;
+  flex-basis: 5%;
+}
+
+.icon {
+  padding: 2em 0em;
+  border: dashed;
+  margin: 1em;
+}
+
+.icon img {
+  max-width: 100%;
+}
+
+.thumb-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2em;
+}
+
+.thumbnail {
+  border: dashed;
+  margin: 10px 10px;
+}
+
+.thumbnail img {
+  max-width: 100%;
+}
+
+.search-bar {
+  flex-basis: 50%;
+  border: dashed;
+  margin-left: 1em;
+}
+
+.logo {
+  flex-basis: 15%;
+  border: dashed;
+}
+
+.login {
+  flex-basis: 15%;
+  border: dashed;
+}
